@@ -2,6 +2,11 @@
 #define PHONEBOOK_H
 
 #include "Contact.hpp"
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cstdlib>
+#include <cctype>
 
 class PhoneBook
 {
@@ -9,12 +14,14 @@ class PhoneBook
         Contact _contacts[8];
         int _next;
         int _count;
+        std::string truncate(std::string str);
 
     public:
         PhoneBook();
         void addContact(const Contact &contact);
         void listContacts();
         Contact getContact(int index);
+        int getCount() const;
 };
 
 #endif

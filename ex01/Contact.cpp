@@ -9,9 +9,9 @@ void Contact::setLastName(const std::string &name)
     lastName = name;
 }
 
-void Contact::setNickname(const std::string &name)
+void Contact::setNickName(const std::string &name)
 {
-    nickname = name;
+    nickName = name;
 }
 
 void Contact::setPhoneNumber(const std::string &number)
@@ -34,9 +34,9 @@ std::string Contact::getLastName() const
     return lastName;
 }
 
-std::string Contact::getNickname() const
+std::string Contact::getNickName() const
 {
-    return nickname;
+    return nickName;
 }
 
 std::string Contact::getPhoneNumber() const
@@ -47,4 +47,13 @@ std::string Contact::getPhoneNumber() const
 std::string Contact::getDarkestSecret() const
 {
     return darkestSecret;
+}
+
+void Contact::display()const 
+{
+    std::cout << "First name: " << firstName << std::endl;
+    std::cout << "Last name: " << lastName << std::endl;
+    std::cout << "Nick name: " << nickName << std::endl;
+    std::cout << "Phone number: " << phoneNumber << std::endl;
+    std::cout << "Darkest secret: " << darkestSecret << std::endl;
 }
