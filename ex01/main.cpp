@@ -1,5 +1,9 @@
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
+#include <iostream>
+#include <cctype>
+#include <cstdlib>
+#include <string>
 
 std::string getInput(const std::string &prompt)
 {

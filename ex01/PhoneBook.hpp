@@ -2,11 +2,7 @@
 #define PHONEBOOK_H
 
 #include "Contact.hpp"
-#include <iostream>
-#include <iomanip>
 #include <string>
-#include <cstdlib>
-#include <cctype>
 
 class PhoneBook
 {
